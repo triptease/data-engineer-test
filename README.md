@@ -1,9 +1,9 @@
 # Data Engineer Test
 ### Back story
-Triptease receives hundreads of events per second from tens of thousands of sites. One of the parts of pipeline is to analyze and aggregate this raw data into metrics so that they can be accessed from our client dashboard quickly and effiecntly. We'd like to you replicate this part of the pipeline.
+Triptease receives hundreds of events per second from tens of thousands of sites. One of the parts of pipeline is to analyze and aggregate this raw data into metrics so that they can be accessed from our client dashboard quickly and efficiently. We'd like to you replicate this part of the pipeline.
 
-### The excerise
-In the data folder we have attached a sample of 3 days of our page view event data. We would like you take this data, and write a pipeline that ingests the files and inserters aggregate data into a database of your choosing which would then be served by an API (writing API not excepted). You can use any language or tool to assist you however we are looking for a repeatable solution such as batching with luigi or a streaming solution.
+### The exercise
+In the data folder we have attached a sample of 3 days of our page view event data. We would like you take this data, and write a pipeline that ingests the files and inserts aggregate data into a database of your choosing which would then be served by an API (writing API not excepted). You can use any language or tool to assist you however we are looking for a repeatable solution such as batching with luigi or a streaming solution.
 
 The example events do not including grouping events by session and this will need to be calculated by your pipeline. The rules defining a session are that:
 
@@ -11,7 +11,7 @@ The example events do not including grouping events by session and this will nee
 * A session is a grouping of events with the same user\_id and account\_id with a less then 2 hour gap between them
 
 
-Aggregates excepted:
+Aggregates expected:
 
 * Per hour
 * Per account id
